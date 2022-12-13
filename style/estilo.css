@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+:root{
+    --font-menu:'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    background-color: white;
+}
+
+header, ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    font-family: var(--font-menu);
+    font-weight: 600;
+}
+
+body{
+    background-image: linear-gradient(90deg, #CED5DF ,#EAEFF5);
+}
+
+.pesquisa{
+    display: flex;
+    align-items: center;
+}
+
+.conteinerIcons{
+    display: flex;
+}
+
+.pesquisa input{
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-left: 20px;
+}
+
+.pesquisa label{
+    display: flex;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.icon_bottons{
+    font-size: 1.5em;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.icon_bottons:hover{
+    color: #F2CB05;
+}
+
+.NavBottons ul{
+    gap: 25px;
+    list-style: none;
+}
+
+.NavBottons ul li{
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.NavBottons ul li::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #F2CB05;
+    transition: all 1s ease;
+}
+
+.NavBottons ul li:hover::before{
+    width: 100%;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.capa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-menu);
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+.txt-button{
+    text-align: center;
+    font-size: 1.5rem;
+    width: 40vw;
+    margin-right: 20px;
+}
+
+.txt-button p{
+    border-bottom: 3px solid #F2CB05;
+    margin-bottom: 20px;
+}
+
+.imagem img{
+    display: block;
+    width: 400px;
+    border-radius: 50%;
+}
+
+#imgTenis{
+    transition: 1s ease;
+}
+
+.scaleImg{
+    transform: scale(1.1);
+}
+
+.BtnCapa{
+    border: 1px solid black;
+    border-radius: 30px;
+    background: transparent;
+    height: 50px;
+    width: 200px;
+    font-family: var(--font-menu);
+    position: relative;
+    cursor: pointer;
+}
+
+.BtnCapa::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #F2CB05;
+    z-index: -1;
+    transition: all 1s ease;
+}
+
+.BtnCapa:hover::before{
+    width: 100%;
+}
+
+.ConteinerMenu{
+    display: none;
+}
+
+#BtnMenu{
+    font-size: 2em;
+}
