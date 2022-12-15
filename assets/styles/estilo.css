@@ -2,6 +2,7 @@
 
 :root{
     --font-menu:'Poppins', sans-serif;
+    --cor-destaque: #F2CB05;
 }
 
 *{
@@ -13,6 +14,7 @@
 
 .header{
     background-color: white;
+    height: 100px;
 }
 
 header, ul{
@@ -22,6 +24,11 @@ header, ul{
     height: 100px;
     font-family: var(--font-menu);
     font-weight: 600;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
 }
 
 body{
@@ -60,7 +67,7 @@ body{
 }
 
 .icon_bottons:hover{
-    color: #F2CB05;
+    color: var(--cor-destaque);
 }
 
 .NavBottons ul{
@@ -81,7 +88,7 @@ body{
     bottom: 0;
     width: 0;
     height: 3px;
-    background-color: #F2CB05;
+    background-color: var(--cor-destaque);
     transition: all 1s ease;
 }
 
@@ -93,8 +100,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+    height: 550px;
 }
 
 .capa{
@@ -103,18 +109,22 @@ body{
     justify-content: center;
     font-family: var(--font-menu);
     font-weight: 300;
-    margin-top: 30px;
+    width: 100%;
+    height: 100%;
 }
 
 .txt-button{
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     font-size: 1.5rem;
     width: 40vw;
     margin-right: 20px;
+    text-align: center;
 }
 
 .txt-button p{
-    border-bottom: 3px solid #F2CB05;
+    border-bottom: 3px solid var(--cor-destaque);
     margin-bottom: 20px;
 }
 
@@ -133,14 +143,17 @@ body{
 }
 
 .BtnCapa{
+    display: inline-block;
     border: 1px solid black;
     border-radius: 30px;
     background: transparent;
-    height: 50px;
-    width: 200px;
     font-family: var(--font-menu);
+    font-size: 16px;
+    font-weight: 500;
     position: relative;
     cursor: pointer;
+    padding: 10px;
+    width: 200px;
 }
 
 .BtnCapa::before{
@@ -151,7 +164,7 @@ body{
     width: 0;
     height: 100%;
     border-radius: 30px;
-    background-color: #F2CB05;
+    background-color: var(--cor-destaque);
     z-index: -1;
     transition: all 1s ease;
 }
@@ -166,4 +179,5 @@ body{
 
 #BtnMenu{
     font-size: 2em;
+    padding: 5px;
 }

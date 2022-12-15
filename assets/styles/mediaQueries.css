@@ -30,8 +30,31 @@
         gap: 10px;
     }
 
+    header{
+        position: relative;
+        transition: width 1s;
+    }
+
+    ul{
+        display: inline-block;
+    }
+
     .NavBottons{
-        display: none;
+        opacity: 0;
+        height: 0;
+        transition: height 1s ease;
+    }
+
+    .MenuShow{
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: white;
+        position:absolute;
+        top: 70px;
+        width: 100vw;
+        height: 150px;
     }
 
     .ConteinerMenu{
@@ -54,11 +77,24 @@
 
 @media screen and (max-width: 660px) {
     .txt-button{
+        position: relative;
         font-size: 1em;
     }
 
     .capa{
-        position: relative;
-        top: 60px;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: none;
+    }
+
+    .txt-button{
+        margin-top: 20px;
+        width: 90%;
+        font-size: 1.2em;
+    }
+
+    .bottonMenu{
+        display: block;
     }
 }

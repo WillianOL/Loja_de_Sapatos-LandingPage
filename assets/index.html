@@ -5,23 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing-page</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="mediaQueries.css">
+    <link rel="stylesheet" href="styles/estilo.css">
+    <link rel="stylesheet" href="styles/mediaQueries.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header class="header">
-        <div class="ConteinerMenu">
+
+        <div class="ConteinerMenu" onclick="abrirMenu()"> <!--Menu Hamburguer com display none, para aparecer em celulares-->
             <i class="material-symbols-outlined icon_bottons" id="BtnMenu">Menu</i>
-        </div>
-        <nav class="NavBottons">
+        </div> 
+
+        <nav class="NavBottons" id="AbriMenu"> <!--Botões de navegação do menu-->
             <ul>
                 <li>Home</li>
                 <li>Login</li>
                 <li>Contato</li>
             </ul>
         </nav>
-        <div class="pesquisa">
+
+        <div class="pesquisa"> <!--Barra de pesquisa com os icones-->
             <div class="conteinerIcons">
                 <i class="material-symbols-outlined icon_bottons">local_mall</i>
                 <i class="material-symbols-outlined icon_bottons">favorite</i>
@@ -30,23 +33,25 @@
             <label for="Ipesquisa"><i class="material-symbols-outlined" id="lupaIcon">search</i></label>
         </div>
     </header>
-    <main>
-        <section class="banner">
-            <article class="capa">
-                <div class="txt-button">
+
+    <main class="banner"> <!--Conteúdo principal, com a imagem, texto e os botões-->
+
+            <section class="capa"><!--Conteiner da página principal-->
+                <div class="txt-button"> <!--Texto principal e botões de navegação-->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate nulla fugiat sit velit ex eum at accusantium? Aperiam, voluptatum non!</p>
-                    <div class="conteinerBtn">
-                        <button class="BtnCapa">Pesquisar Produtos</button>
-                        <button class="BtnCapa" onmouseenter="crescerImg()" onmouseout="diminuirImg()">Produto da capa</button>
+                    <div class="conteinerBtn"> <!--Conteiner dos botões-->
+                        <label for="Ipesquisa" class="BtnCapa">Pesquisar Produtos</label>
+                        <label class="BtnCapa" onmouseenter="crescerImg()" onmouseout="diminuirImg()">Produto da capa</label>
                     </div>
                 </div>
-                <div class="imagem">
+
+                <div class="imagem"> <!--Conteiner da imagem do tênis-->
                     <img src="../imagens-tenis/tenis03.jpg" alt="tênis da capa" id="imgTenis">
                 </div>
-            </article>
-        </section>
+            </section>
     </main>
 
     <script src="../assets/efeitoZoomImg.js"></script>
+    <script src="../assets/BtnMenu.js"></script>
 </body>
 </html>
