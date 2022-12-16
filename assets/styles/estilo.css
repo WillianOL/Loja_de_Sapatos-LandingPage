@@ -12,6 +12,16 @@
 }
 
 
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background-image: linear-gradient(90deg, #CED5DF ,#EAEFF5);
+}
+
+/*====Estilização do header====*/
 .header{
     background-color: white;
     height: 100px;
@@ -26,50 +36,11 @@ header, ul{
     font-weight: 600;
 }
 
-html, body{
-    width: 100vw;
-    height: 100vh;
+header{
+    height: 100px;
 }
 
-body{
-    background-image: linear-gradient(90deg, #CED5DF ,#EAEFF5);
-}
-
-.pesquisa{
-    display: flex;
-    align-items: center;
-}
-
-.conteinerIcons{
-    display: flex;
-}
-
-.pesquisa input{
-    text-align: center;
-    width: 200px;
-    height: 30px;
-    border-radius: 20px;
-    border: 1px solid black;
-    margin-left: 20px;
-}
-
-.pesquisa label{
-    display: flex;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-.icon_bottons{
-    font-size: 1.5em;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: color 0.5s ease;
-}
-
-.icon_bottons:hover{
-    color: var(--cor-destaque);
-}
-
+/*====Estilização dos botões de navegação do menu====*/
 .NavBottons ul{
     gap: 25px;
     list-style: none;
@@ -96,6 +67,43 @@ body{
     width: 100%;
 }
 
+/*====Estilização da barra de pesquisa e icones====*/
+.pesquisa{
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa input{
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-left: 20px;
+}
+
+.pesquisa label{
+    display: flex;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.conteinerIcons{
+    display: flex;
+}
+
+.icon_bottons{
+    font-size: 1.5em;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.icon_bottons:hover{
+    color: var(--cor-destaque);
+}
+
+/*====Estilização d0 conteúdo principal====*/
 .banner{
     display: flex;
     align-items: center;

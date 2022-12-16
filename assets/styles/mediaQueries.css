@@ -31,42 +31,44 @@
     }
 
     header{
+        display: flex;
+        justify-content: space-between;
         position: relative;
         transition: width 1s;
     }
 
     ul{
-        display: inline-block;
+        display: block;
         position: absolute;
         top: 30px;
+        width: 100%;
+    }
+
+    li{
+        text-align: center;
+        border-bottom: 2px solid black;
     }
 
     .NavBottons{
-        display: flex;
         position: absolute;
-        opacity: 0;
+        visibility: hidden;
         height: 0;
         top: 70px;
-        transition: height 1s ease;
+        overflow-y: hidden;
+        transition: height 1.5s ease;
     }
 
     .MenuShow{
-        opacity: 1;
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        visibility: visible;
         background-color: white;
         width: 100vw;
-        height: 170px;
+        height: calc(100vh - 75px);
+        z-index: 1000;
     }
 
     .ConteinerMenu{
         display: block;
         margin-left: 30px;
-    }
-
-    header{
-        justify-content: space-between;
     }
 
     .pesquisa{
