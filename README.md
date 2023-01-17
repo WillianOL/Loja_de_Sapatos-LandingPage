@@ -3,7 +3,7 @@
 </div>
 
 <div>
-  <h3 align="center">Está é uma página de login responsiva.</h3>
+  <h3 align="center">Esta é uma landing-page com tema de loja de sapatos</h3>
 </div>
  <div align='center'>
    
